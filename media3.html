@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  border: solid 4px red;
+  color: black;
+
+}
+
+
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+    <li>Home</li>
+    <li>Taco Menu</li>
+    <li>Draft List</li>
+    <li>Hours</li>
+    <li>Directions</li>
+    <li>Contact</li>
+    </ul>
+  </div>
+
+  <div class="col-6">
+    <h1>The City</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab repellendus asperiores maxime officia? Laboriosam, alias error quasi sequi aliquam praesentium deserunt vero accusamus nam natus facilis sit sunt dolor distinctio quisquam iure pariatur perspiciatis a ea nulla aut non ratione! Enim veritatis ipsum culpa molestias ut voluptatem totam voluptate omnis.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque neque fugiat ut velit nobis voluptas placeat quo repellendus obcaecati dolorum quia quidem autem odio illum, quibusdam illo, sapiente, dolore cupiditate aperiam est ullam nam at! Atque amet incidunt distinctio! Sit ex voluptatum dolorum nisi, nihil error quas similique perspiciatis doloribus consequatur perferendis harum accusamus quam earum dolorem atque fugiat tempora numquam velit minus suscipit, nesciunt voluptatibus ad vero! Eius, cumque!</p>
+  </div>
+</body>
+</html>
